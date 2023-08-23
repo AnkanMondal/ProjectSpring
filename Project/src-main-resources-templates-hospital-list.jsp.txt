@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospitals List</title>
+</head>
+<body>
+    <h2>Hospitals List</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <c:forEach items="${hospitals}" var="hospital">
+            <tr>
+                <td>${hospital.id}</td>
+                <td>${hospital.name}</td>
+            </tr>
+        </c:forEach>
+    </table>
+</body>
+</html>
